@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="CSS/styles.css" as="style">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>CV Online - ISC Lenin Gerardo Silva Sabas</title>
+    <style>
+        .iconos img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            transform: scale(1.1);
+        }
+        .servicio .iconos {
+            background: none;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1 class="titulo">ISC. Lenin Gerardo Silva Sabas</h1>
+</header>
+
+<div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#educacion">Educación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</div>
+
+<section id="inicio" class="hero">
+    <div class="contenido-hero">
+        <h2>Desarrollo de Sistemas Web y Aplicaciones Empresariales</h2>
+        <div class="ubicacion">
+            <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 24 24" fill="none"
+                 stroke="#ffcc00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/>
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/>
+            </svg>
+            <p>Aguascalientes, México</p>
+        </div>
+        <a class="boton" href="#contacto">Contactar</a>
+    </div>
+</section>
+
+<main class="contenedor sombra">
+    <h2 id="sobre-mi">Sobre mí</h2>
+    <p>Soy una persona dedicada, apasionada y capaz de afrontar cualquier reto profesional. Mi experiencia combina el desarrollo de sistemas web con liderazgo de proyectos en entornos colaborativos. Busco seguir desarrollándome profesionalmente en áreas de desarrollo full stack, redes y gestión de proyectos ágiles.</p>
+
+    <h2 id="educacion">Educación</h2>
+    <div class="servicios">
+        <section class="servicio">
+            <h3>Universidad Politécnica de Aguascalientes</h3>
+            <div class="iconos">
+                <img src="img/logo-upa.png" alt="Logo UPA">
+            </div>
+            <p>Ingeniería en Sistemas Computacionales (2022 - Presente)</p>
+        </section>
+
+        <section class="servicio">
+            <h3>CeTis 155 "Josefa Ortíz de Domínguez"</h3>
+            <div class="iconos">
+                <img src="img/logo-cetis155.png" alt="Logo CeTis 155">
+            </div>
+            <p>Técnico en Programación (2019 - 2022)</p>
+        </section>
+    </div>
+
+    <h2 id="proyectos">Proyectos</h2>
+    <div class="servicios">
+        <section class="servicio">
+            <h3>Administración de Recursos Humanos</h3>
+            <div class="iconos">
+                <img src="img/proyecto.png" alt="Proyecto Recursos Humanos">
+            </div>
+            <p><strong>Rol:</strong> Líder de Proyecto, Backend & Frontend<br>
+                <strong>Descripción:</strong> Implementación del módulo de contratación, rediseño visual y nuevas funcionalidades.<br>
+                <strong>Logros:</strong> 1er lugar en el XXIV Concurso Nacional de Prototipos (Etapa Estatal) y V Encuentro de Emprendedores 2022.</p>
+        </section>
+
+        <section class="servicio">
+            <h3>Sistema de Gestión de Inventarios</h3>
+            <div class="iconos">
+                <img src="img/proyecto.png" alt="Proyecto Inventario">
+            </div>
+            <p><strong>Rol:</strong> Backend & Frontend<br>
+                <strong>Descripción:</strong> Control de inventario con autenticación en Active Directory, auditorías y reportes automáticos.<br>
+                <strong>Logros:</strong> Integración segura con generación automática de reportes y seguimiento de cambios.</p>
+        </section>
+    </div>
+</main>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <form class="formulario">
+        <fieldset>
+            <legend>Contáctame llenando todos los campos</legend>
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input class="input-text" type="text" placeholder="Tu nombre" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input class="input-text" type="number" placeholder="Tu teléfono" id="telefono" name="telefono" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input class="input-text" type="email" placeholder="Tu email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="input-text" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Tu mensaje" required></textarea>
+                </div>
+            </div>
+            <div class="alinear-derecha flex">
+                <input class="boton w-sm-100" type="submit" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+</section>
+
+<footer>
+    <p>Todos los derechos reservados ISC. Lenin Gerardo Silva Sabas</p>
+</footer>
+</body>
+
+</html>
