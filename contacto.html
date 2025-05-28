@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="CSS/styles.css" as="style">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Contacto - ISC Lenin Gerardo Silva Sabas</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">ISC. Lenin Gerardo Silva Sabas</h1>
+    </header>
+
+<div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+        <a href=index.html>Inicio</a>
+        <a href=index.html>Sobre mí</a>
+        <a href=educacion.html>Educación</a>
+        <a href=proyectos.html>Proyectos</a>
+        <a href= contacto.html>Contacto</a>
+    </nav>
+</div>
+
+   <main class="contenedor sombra">
+    <h2 class="centrar-texto">Contacto</h2>
+    <div class="servicios contacto-info">
+        <section class="servicio">
+            <h3 class="centrar-texto">Información de contacto</h3>
+            <ul>
+                <li><strong>Teléfono:</strong> <a href="tel:+524492755585">449 275 5585</a></li>
+                <li><strong>Email:</strong> <a href="mailto:lenin3801@gmail.com">lenin3801@gmail.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lenin-silva/" target="_blank">Lenin_Silva</a></li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/lenin_skere" target="_blank">@lenin_skere</a></li>
+            </ul>
+        </section>
+    </div>
+</main>
+
+    <section id="contacto">
+    <form class="formulario">
+        <fieldset>
+            <legend>Contáctame, si quieres una cotización llenando todos los campos</legend>
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input class="input-text" type="text" placeholder="Tu nombre" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input class="input-text" type="number" placeholder="Tu teléfono" id="telefono" name="telefono" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input class="input-text" type="email" placeholder="Tu email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="input-text" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Tu mensaje" required></textarea>
+                </div>
+            </div>
+            <div class="alinear-derecha flex">
+                <input class="boton w-sm-100" type="submit" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+    </section>
+
+
+    <footer>
+        <p>Todos los derechos reservados ISC. Lenin Gerardo Silva Sabas</p>
+    </footer>
+</body>
+
+</html>
