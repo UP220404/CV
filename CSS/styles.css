@@ -375,3 +375,77 @@ h3 {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Ajuste responsivo general para las secciones tipo tarjetas */
+@media (max-width: 767px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .contacto-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .servicio {
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .servicio h3 {
+        font-size: 1.6rem;
+    }
+
+    .servicio p,
+    .servicio li {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .iconos img {
+        width: 80px;
+        height: 80px;
+        transform: scale(1.2);
+    }
+}
+
+/* Ajustes extra para texto que se rompe feo en móvil */
+.servicio p,
+.servicio li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Recuadros de proyectos más grandes */
+.fila {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.fila .servicio {
+    width: 100%;
+    max-width: 800px; /* antes era 600px */
+    padding: 3rem 2rem;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+    .fila .servicio {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .fila .servicio {
+        width: 80%;
+    }
+}
